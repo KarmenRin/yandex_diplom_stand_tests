@@ -15,7 +15,7 @@ def get_order(track):
     """Функция получения заказа по его номеру"""
     return requests.get(URL_SERVICE + GET_ORDER_PATH + str(track))
 
-
+# Ирина Клименко, 6-я когорта — Финальный проект. Инженер по тестированию плюс
 def test_positive_assert():
     """Тестирование создания нового заказа"""
     track = post_new_order(order_body).json()['track']
